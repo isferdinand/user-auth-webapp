@@ -3,6 +3,7 @@ import './login.css'
 import '../../App.css'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import Axios from 'axios';
+import baseUrl from '../../baseUrl';
 
 const PasswordReset = () => {
     // use state hook to store inputs
@@ -20,7 +21,7 @@ const PasswordReset = () => {
         e.preventDefault()
 
         // Using Axios to create an API that connects to the server
-        Axios.post(`http://localhost:3002/resetPassword/${emailLink}/${token}`, {
+        Axios.post(`${baseUrl}/login/resetPassword/${emailLink}/${token}`, {
             // Variable to send to server through the route  
             PasswdReset: passwdreset,
             // ConfirmPasswd: confirmpasswd

@@ -3,6 +3,7 @@ import './register.css';
 import '../../App.css'
 import { Link, useNavigate } from 'react-router-dom'
 import Axios from 'axios'
+import baseUrl from '../../baseUrl';
 
 
 const Register = () => {
@@ -18,7 +19,7 @@ const Register = () => {
     const createUser = (e) => {
         e.preventDefault()
         // Using Axios to create an API that connects to the server
-        Axios.post('http://localhost:3002/register', {
+        Axios.post(`${baseUrl}/register`, {
             // Variable to send to server through the route  
             RegNo: regno,
             FullName: fullName,

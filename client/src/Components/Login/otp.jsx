@@ -3,6 +3,7 @@ import './login.css'
 import '../../App.css'
 import { Link, useNavigate } from 'react-router-dom'
 import Axios from 'axios';
+import baseUrl from '../../baseUrl';
 
 const OTPReset = () => {
     // use state hook to store inputs
@@ -17,7 +18,7 @@ const OTPReset = () => {
         e.preventDefault()
 
         // Using Axios to create an API that connects to the server
-        Axios.post('http://localhost:3002/otp', {
+        Axios.post(`${baseUrl}/otp`, {
             // Variable to send to server through the route  
             Email: email,
         }).then((response) => {

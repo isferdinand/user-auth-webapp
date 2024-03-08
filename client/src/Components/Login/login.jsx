@@ -3,6 +3,7 @@ import './login.css'
 import '../../App.css'
 import { Link, useNavigate } from 'react-router-dom'
 import Axios from 'axios';
+import baseUrl from '../../baseUrl';
 
 const Login = () => {
     // use state hook to store inputs
@@ -18,7 +19,7 @@ const Login = () => {
         e.preventDefault()
 
         // Using Axios to create an API that connects to the server
-        Axios.post('http://localhost:3002/login', {
+        Axios.post(`${baseUrl}/login`, {
             // Variable to send to server through the route  
             LoginRegNo: loginRegno,
             LoginPassword: loginPassword
