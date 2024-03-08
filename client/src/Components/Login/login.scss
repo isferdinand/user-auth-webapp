@@ -1,0 +1,43 @@
+.input-wrapper {
+  input {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.member {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.member-login {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-left: 0.1rem;
+  color: #7289da;
+}
+
+.pasreset {
+  text-align: right;
+  font-style: italic;
+  color: red;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.resetSuccess {
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.emailSuccess {
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}

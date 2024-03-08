@@ -1,0 +1,23 @@
+.input-wrapper {
+  margin-bottom: 0.75rem;
+}
+.input-wrapper label {
+  color: #333;
+  font-weight: 500;
+}
+.input-wrapper input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.input-wrapper .member {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+.input-wrapper .member-login {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  color: #7289da;
+}/*# sourceMappingURL=register.css.map */
